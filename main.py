@@ -20,10 +20,10 @@ def main():
     character_count = count_characters(text)
     sorted_dict = sort_dict(character_count)
 
-    print("============ BOOKBOT ============")
-    print(f"Analyzing book found at books/frankenstein.txt...")
+    print("============ BOOKBOT ============\n")
+    print(f"Analyzing book found at {sys.argv[1]}...\n")
     print("----------- Word Count ----------")
-    print(f"Found {total_words} total words")
+    print(f"Found {total_words} total words\n")
     print("--------- Character Count -------")
 
     for character in sorted_dict:
